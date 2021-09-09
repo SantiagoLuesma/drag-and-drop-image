@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2027a7;
+}
+
+.drag{
+    border: 2px dashed #fff;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drag.active{
+    border: 2px solid #fff;
+    background-color: #1f2596;
+}
+
+.drag__icon{
+    font-size: 100px;
+    color: #fff;
+}
+
+.drag__title{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.drag span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 35px 0;
+}
+
+.drag__button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #5256ad;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drag__button:hover{
+    color: #fff;
+    background-color: #484c95;
+}
+
+.drag img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
